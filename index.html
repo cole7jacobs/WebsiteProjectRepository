@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional student portfolio and personal website.">
+  <meta name="description" content="Professional student portfolio and personal website for Cole Jacobs.">
   <title>Home | Cole Jacobs</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,7 +12,10 @@
   <!-- Site Navigation Header -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="site-logo">Cole Jacobs</a>
+      <a href="index.html" class="site-logo">
+        <span class="logo-mark">CJ</span>
+        <span class="logo-text">Cole Jacobs</span>
+      </a>
       <nav class="site-nav" aria-label="Main Navigation">
         <ul>
           <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -29,13 +32,22 @@
     <!-- Profile / Hero Section -->
     <section id="profile" class="section">
       <div class="hero-card">
-        <span class="hero-tag">Undergraduate Student</span>
+        <span class="hero-tag">
+          <span class="status-dot" aria-hidden="true"></span>
+          Undergraduate Student
+        </span>
         <h1 class="hero-title">Hi, I'm Cole Jacobs.</h1>
         <p class="hero-description">
           Welcome to my professional personal website. I am an undergraduate student focused on software development and technology. This site showcases my academic background, technical skills, coursework projects, and professional experience.
         </p>
         <div class="hero-actions">
-          <a href="resume.html" class="btn btn-primary">View Resume</a>
+          <a href="resume.html" class="btn btn-primary">
+            View Resume
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
           <a href="project.html" class="btn btn-outline">Explore Projects</a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
@@ -51,6 +63,12 @@
 
       <div class="card-grid">
         <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
           <h3>Languages</h3>
           <p>Foundational programming languages used in coursework and personal development.</p>
           <div class="skill-tags">
@@ -62,6 +80,13 @@
         </div>
 
         <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
           <h3>Frameworks & Libraries</h3>
           <p>Technologies used for building web applications and software solutions.</p>
           <div class="skill-tags">
@@ -72,6 +97,12 @@
         </div>
 
         <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+          </div>
           <h3>Developer Tools</h3>
           <p>Productivity, version control, and development environments.</p>
           <div class="skill-tags">
@@ -131,18 +162,36 @@
 
       <div class="contact-container">
         <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
           <h3>Email</h3>
           <p>Available for recruiter outreach and questions.</p>
           <a href="mailto:example@college.edu" class="btn btn-outline">Send Email</a>
         </div>
 
         <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
           <h3>LinkedIn</h3>
           <p>Connect with me professionally.</p>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn Profile</a>
         </div>
 
         <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </div>
           <h3>GitHub</h3>
           <p>Browse code repositories and contributions.</p>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile</a>
