@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="cj-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with executive navy to modern royal blue gradient matching site design -->
+  <rect width="64" height="64" rx="14" fill="url(#cj-grad)"/>
+  <!-- Bold high-contrast initials CJ, optimized for small browser-tab recognition -->
+  <text x="32" y="33"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="28"
+        font-weight="800"
+        fill="#ffffff"
+        text-anchor="middle"
+        dominant-baseline="central"
+        letter-spacing="0.5">CJ</text>
+</svg>

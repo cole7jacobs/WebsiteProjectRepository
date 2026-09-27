@@ -82,9 +82,13 @@ a:hover {
   color: var(--color-primary-hover);
 }
 
-a:focus-visible, button:focus-visible {
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
   outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
 }
 
 img {
@@ -1187,4 +1191,109 @@ main {
   display: flex;
   gap: 0.85rem;
   flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Polish: Subtle Hover Elevations & Keyboard Focus Accessibility
+   ========================================================================== */
+
+/* Nav links — pill-shaped focus ring that matches their border-radius */
+.nav-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Buttons — rounded focus ring matching button shape */
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+/* Site logo — deeper shadow on logo-mark when logo is hovered */
+.site-logo:hover .logo-mark {
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+  transition: box-shadow 0.15s ease;
+}
+
+/* Site logo — focus ring */
+.site-logo:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+/* Footer links — focus ring */
+.footer-links a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Meta items — subtle hover for project page overview grid */
+.meta-item {
+  transition: var(--transition-fast);
+}
+
+.meta-item:hover {
+  border-color: var(--color-border-hover);
+  background-color: #ffffff;
+}
+
+/* Framework mini-cards — subtle hover */
+.framework-mini-card {
+  transition: var(--transition-fast);
+}
+
+.framework-mini-card:hover {
+  border-color: var(--color-border-hover);
+  background-color: #ffffff;
+  box-shadow: var(--shadow-xs);
+}
+
+/* Role cards — subtle hover lift */
+.role-card {
+  transition: var(--transition);
+}
+
+.role-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Reflection pillars — subtle hover */
+.reflection-pillar {
+  transition: var(--transition-fast);
+}
+
+.reflection-pillar:hover {
+  border-color: var(--color-border-hover);
+  background-color: #ffffff;
+  box-shadow: var(--shadow-xs);
+}
+
+/* Resume contact bar links — focus ring */
+.resume-contact-bar a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Respect user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
